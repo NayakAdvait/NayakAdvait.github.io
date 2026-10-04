@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ef;
+    color: #242424;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 21px;
+    color: #2f5d62;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #2f5d62;
+}
+
+
+/* Introduction */
+
+.intro {
+    max-width: 1100px;
+    min-height: 600px;
+    margin: auto;
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.small-heading {
+    color: #2f5d62;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.intro-text p:not(.small-heading) {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 20px;
+    background: #2f5d62;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: #24484c;
+}
+
+.photo img {
+    width: 320px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+
+/* Common Sections */
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2f5d62;
+}
+
+.section > p {
+    color: #555555;
+    margin-bottom: 18px;
+}
+
+
+/* Education */
+
+.education-item {
+    background: #ffffff;
+    border-left: 4px solid #2f5d62;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.education-item h3 {
+    font-size: 21px;
+    margin: 5px 0;
+}
+
+.education-item p {
+    color: #555555;
+}
+
+.education-item .year {
+    color: #2f5d62;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.skill h3 {
+    color: #2f5d62;
+    margin-bottom: 5px;
+}
+
+.skill p {
+    color: #666666;
+}
+
+
+/* Interests */
+
+.interests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.interests div {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.interests span {
+    font-size: 32px;
+}
+
+.interests h3 {
+    margin: 10px 0 5px;
+}
+
+.interests p {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #2f5d62;
+    border: 1px solid #2f5d62;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.contact-links a:hover {
+    background: #2f5d62;
+    color: white;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #ffffff;
+    border-top: 1px solid #dddddd;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 750px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .intro h1 {
+        font-size: 44px;
+    }
+
+    .photo img {
+        width: 260px;
+        height: 310px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .interests {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 25px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .photo img {
+        width: 220px;
+        height: 270px;
+    }
+}
